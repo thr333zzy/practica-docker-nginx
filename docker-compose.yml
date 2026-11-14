@@ -1,0 +1,9 @@
+name: practica-docker-nginx
+
+services:
+  web:
+    image: nginx:alpine
+    ports:
+      - "8091:80"
+    volumes:
+      - ./src:/usr/share/nginx/html
